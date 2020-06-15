@@ -14,6 +14,13 @@ body {
   background-color: #fff;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
 header {
   height: 50px;
   margin-top: 2rem;
@@ -56,13 +63,13 @@ a:visited {
   color: inherit;
 }
 
-/* a:link,
-a:hover {
-  color: #0366d6;
-} */
-
 header li + li {
   margin-left: 1rem;
+}
+
+.octo,
+.terra {
+  display: block;
 }
 
 .octo img {
@@ -73,32 +80,37 @@ header li + li {
   border-radius: 10px;
 }
 
-.queer {
+.details {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details p,
+.details h4 {
+  margin: 0;
+}
+
+section {
+  width: 327px;
+}
+
+.queer,
+.Terracottocat,
+.Blacktocats,
+.Grinchtocat,
+.punk,
+.docto,
+.ben,
+.minerto,
+.jetpack,
+.cooler,
+.delos,
+.nyanto {
+  display: flex;
   justify-content: flex-start;
-  /* align-items: ; */
-  margin-top: 0.25rem;
-}
-
-.wrapper {
-  display: flex;
-  /* flex-direction: column; */
-  align-items: flex-end;
-  grid-template-columns: 20px 20px 20px;
-  padding-right: 2rem;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 350px;
-  grid-template-rows: 320px;
-}
-
-div {
-  display: block;
-  justify-content: flex-end;
-  align-items: baseline;
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .terra img {
@@ -107,7 +119,6 @@ div {
   margin-top: 1rem;
   margin-left: 1rem;
   border-radius: 10px;
-  display: flex;
 }
 
 .black img {
@@ -192,5 +203,7 @@ div {
 
 footer {
   color: #586069;
-  margin-bottom: 10px;
+  text-align: left;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding-top: 1rem;
 }
